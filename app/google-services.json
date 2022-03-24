@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "668277063644",
+    "project_id": "videosnowx",
+    "storage_bucket": "videosnowx.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:668277063644:android:052dec53ab4bad981e1919",
+        "android_client_info": {
+          "package_name": "com.elysiumbetas.videosnowx"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "668277063644-stmc70j4gmt3fdjf641e2sqj69vu0eal.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB8I157GpDoMUIwH2yb3p5GOJs72tkNWjQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "668277063644-stmc70j4gmt3fdjf641e2sqj69vu0eal.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
