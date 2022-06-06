@@ -14,6 +14,7 @@ import android.view.WindowManager;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
+import android.widget.Toast;
 
 public class VNXS extends AppCompatActivity {
 
@@ -47,12 +48,16 @@ public class VNXS extends AppCompatActivity {
 
         saveNameBtn.setOnClickListener(v -> {
             String edited = VNXS.this.userEdit.getText().toString();
-            editor.putString("UserName", edited);
-            editor.apply();
-
-            welcomeText.setText("Welcome to VideosNowX, " + edited);
-            welcomeText.setVisibility(View.VISIBLE);
-            startBtn.setVisibility(View.VISIBLE);
+            if (edited.isEmpty()) {
+                Toast.makeText(this, "User name cannot be empty!", Toast.LENGTH_SHORT).show();
+            } else {
+                editor.putString("UserName", edited);
+                editor.apply();
+                saveNameBtn.setClickable(false);
+                welcomeText.setText("Welcome to VideosNowX, " + edited);
+                welcomeText.setVisibility(View.VISIBLE);
+                startBtn.setVisibility(View.VISIBLE);
+            }
         });
     }
 

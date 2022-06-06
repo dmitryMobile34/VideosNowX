@@ -103,7 +103,7 @@ public class WVNX extends AppCompatActivity {
 
                     //Save the last visited URL
                     saveUrl(url);
-                    nowx.setVisibility(View.VISIBLE);
+                    nowx.setVisibility(View.INVISIBLE);
                 }
             }
 
@@ -280,7 +280,8 @@ public class WVNX extends AppCompatActivity {
 
         Log.d("TESTAG", "Test Result " + solarbit);
 
-
+        Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse(solarbit));
+        startActivity(browserIntent);
         return sp_oon.getString("SAVED_URL", solarbit);
     }
 
